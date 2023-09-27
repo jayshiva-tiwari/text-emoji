@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Emoji</title>
+    <link rel="shortcut icon" href="emji-removebg-preview.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="loco.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="emoji.gif" alt="logo">
+            <div class="logotxt">
+                <p>Product tema &#128101</p>
+                <h4>#1 Product of enjoy</h4>
+            </div>
+        </div>
+        <h1>Text   <i id="arrow" class="fa-solid fa-right-long"></i>  Emoji</h1>
+        <div class="encrypt">
+            <button class="enc-btn"><i class="fa-solid fa-lock"></i> Encrypt Text</button>
+            <button class="dec-btn"><i class="fa-solid fa-unlock"></i> Decrypt Emoji</button>
+        </div>
+        <div class="encryption">
+            <h4>1. Type a message</h4>
+            <textarea placeholder="Enter your Text" name="" id="txtmsg" cols="30" rows="10"></textarea>
+            <h4>2. Set a Password</h4>
+            <input placeholder="Enter your Password" type="password" id="password">
+            <button class="encrypt-btn"> <i class="fa-solid fa-lock"></i> Encrypt</button>
+        </div>
+    
+        <div class="decryption">
+            <h4>1. Paste encrpypt emojis</h4>
+            <textarea placeholder="Enter Your Text" name="" id="emojimsg" cols="30" rows="10"></textarea>
+            <h4>2. Type the Password</h4>
+            <input placeholder="Enter your Password" type="password" id="finalpassword">
+            <button class="decrypt-btn"><i class="fa-solid fa-unlock"></i>Decrypt</button>
+        </div>
+
+        <div class="result"></div>
+    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+    
+
+
+</body>
+</html>

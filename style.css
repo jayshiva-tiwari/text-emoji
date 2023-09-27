@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    /* background-color: black; */
+}
+
+.main{
+    height: 120vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    flex-direction: column;
+    color: white;
+    /* margin: 30px; */
+}
+.logo{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.6px solid rgb(226, 224, 224);
+    padding: 3px 14px;
+    opacity: 1;
+    border-radius: 10px;
+    background-color: rgba(226, 225, 225, 0.316);
+    color: white;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.logo:active{
+    scale: 0.9;
+}
+
+.logo img{
+    height:30px;
+    width: 30px;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    right: 20%;
+    /* margin: 0 0px; */
+    margin-top: 10px;
+    margin-bottom: 3px;
+    margin-right: 8px;
+}
+
+.main>h1{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    /* width: 60%; */
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.main>h1 i{
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    /* rotate: 180deg; */
+    transition: 0.6s ease;
+    /* font-weight: 200; */
+}
+
+.main>.encrypt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    background-color: #222;
+    gap: 19px;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.main>.encrypt h3{
+    font-size: 18px;
+    /* background-color: #77747473; */
+}
+
+.main>.encrypt h3 i{
+    margin: 4px;
+}
+
+.enc-btn{
+    background-color: #77747441;
+    padding: 5px 6px;
+    border-radius: 4px;
+    /* color: #444; */
+    /* display: none; */
+    border: none;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.763);
+}
+
+.dec-btn{
+    background-color: #77747441;
+    padding: 5px 6px;
+    border-radius: 4px;
+    /* color: #444; */
+    border: none;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.763);
+}
+
+.enc-btn:active{
+    scale: 0.9;
+    transition: 0.6s;
+}
+
+.dec-btn:active{
+    scale: 0.9;
+    transition: 0.6s;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.encryption{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 19vw;
+    /* margin-right: 10vw; */
+    padding-left: 118px;
+    /* display: none; */
+}
+
+
+.encryption h4{
+    color: #7b7a7adf;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.encryption #txtmsg{
+    width: 60%;
+    height: 70px;
+    border: 1px solid #343434;
+    padding: 9px;
+    border-radius: 4px;
+    background-color: #1c1c1c;
+    outline: none;
+    margin-bottom: 30px;
+    color: #b5b3b3dd;
+}
+
+.encryption input{
+    width: 60%;
+    /* height: 100px; */
+    border: 1px solid #343434;
+    padding: 9px;
+    border-radius: 4px;
+    background-color: #1c1c1c;
+    outline: none; 
+    margin-bottom: 50px;
+    color: #b5b3b3dd;
+}
+
+.encryption .encrypt-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #1c1c1c;
+    border: none;
+    color: #b5b3b3;
+    border-radius: 4px;
+    width: 60%;
+    cursor: pointer;
+}
+
+.encryption .encrypt-btn i{
+    margin-right: 8px;
+
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.decryption{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 19vw;
+    /* margin-right: 10vw; */
+    padding-left: 118px;
+    display: none;
+}
+
+
+.decryption h4{
+    color: #7b7a7adf;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.decryption #emojimsg{
+    width: 60%;
+    height: 70px;
+    border: 1px solid #343434;
+    padding: 9px;
+    border-radius: 4px;
+    background-color: #1c1c1c;
+    outline: none;
+    margin-bottom: 30px;
+    color: #b5b3b3dd;
+}
+
+.decryption input{
+    width: 60%;
+    /* height: 100px; */
+    border: 1px solid #343434;
+    padding: 9px;
+    border-radius: 4px;
+    background-color: #1c1c1c;
+    outline: none; 
+    margin-bottom: 50px;
+    color: #b5b3b3dd;
+}
+
+.decryption .decrypt-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #1c1c1c;
+    border: none;
+    color: #b5b3b3;
+    border-radius: 4px;
+    width: 60%;
+    cursor: pointer;
+}
+
+.decryption .decrypt-btn i{
+    margin-right: 8px;
+
+}
+
+.result{
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #1c1c1c;
+    border: 1px solid #343434;
+    width: 34%;
+    display: none;
+    margin-bottom: 20px;
+}
